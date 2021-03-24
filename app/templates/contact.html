@@ -1,12 +1,14 @@
 {% extends 'index.html' %}
 {% load static %}
+{% block content %}{% endblock content %}
+{%block main%}
 <div class="product-main">
 	<div class="wrap">
 		 <div class="section group">
 				<div class="col span_2_of_3">
 				  <div class="contact-form">
 				  	<h3>Contact Us</h3>
-					    <form method="post" action="{% url 'data'%}">
+					    <form method="post" action="#">
 					    	<div>
 						    	<span><label>Name</label></span>
 						    	<span><input name="userName" type="text" class="textbox"></span>
@@ -16,7 +18,7 @@
 						    	<span><input name="userEmail" type="text" class="textbox"></span>
 						    </div>
 						    <div>
-						     	<span><label>Mobile</label></span>
+						     	<span><label>M ile</label></span>
 						    	<span><input name="userPhone" type="text" class="textbox"></span>
 						    </div>
 						    <div>
@@ -47,5 +49,5 @@
 			 </div>
 	   </div>
   </div>
-    	
+{% endblock main%}	
             

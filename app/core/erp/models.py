@@ -8,7 +8,7 @@ gender_choices = (
 
 class Product(models.Model):
     name = models.CharField(verbose_name='Nombre', max_length=50)
-    image = models.ImageField(upload_to='profuct/%Y/%m/%d', null=True, blank=True)
+    image = models.ImageField(upload_to='product/%Y/%m/%d', null=True, blank=True)
     pvp = models.DecimalField(default=0.00, max_digits=5, decimal_places=2)
 
     class Meta:

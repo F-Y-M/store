@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <div class="content">
+        <div class="presentation">
+            <div class="sneaker">
+                <div class="circle"></div>
+                <img src="{% static 'images/adidas1.png' %}" alt="adidas">
+            </div>
+            <div class="information">
+                <h1 class="title">Adidas ZX</h1>
+                <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                <div class="sizes">
+                    <button>39</button>
+                    <button>40</button>
+                    <button class="active">42</button>
+                    <button>44</button>
+                </div>
+                <div class="purchase">
+                    <button>purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'app.js' %}"></script>
+{% endblock %}

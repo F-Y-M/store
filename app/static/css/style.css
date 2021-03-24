@@ -5,27 +5,13 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
 /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+*{
+	box-sizing: border-box;
+}
+body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,address,code,img,small,strong,form,label{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 ol,ul{list-style:none;margin:0;padding:0;}
-blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-table{border-collapse:collapse;border-spacing:0;}
-/* start editing from here */
 a{text-decoration:none;}
-.txt-rt{text-align:right;}/* text align right */
-.txt-lt{text-align:left;}/* text align left */
-.txt-center{text-align:center;}/* text align center */
-.float-rt{float:right;}/* float right */
-.float-lt{float:left;}/* float left */
 .clear{clear:both;}/* clear float */
-.pos-relative{position:relative;}/* Position Relative */
-.pos-absolute{position:absolute;}/* Position Absolute */
-.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
-.vertical-top{	vertical-align:top;}/* vertical align top */
-.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
-nav.vertical ul li{	display:block;}/* vertical menu */
-nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 @font-face {
@@ -50,9 +36,6 @@ body{
 .product-header{
 	background: url(../images/product-bg.png)no-repeat;
 	padding:10px 0;
-}
-.logo {
-	padding:20px 0px 0;
 }
 /*--menu--*/
 .cssmenu > ul > li {
@@ -738,77 +721,7 @@ h2.resp-accordion {
 .copy p a:hover{
 	color:#fff;
 }
-/*--products--*/
-/*  GRID OF FOUR   ============================================================================= */
-.grid_1_of_4:first-child {
-	margin-left: 0;
-}
-.images_1_of_4 {
-	width: 21.8%;
-	position: relative;
-}
-.grid_1_of_4 {
-	display: block;
-	float: left;
-	margin: 2% 0 2% 3.6%;
-}
-.images_1_of_4 img {
-	max-width: 100%;
-	display: block;
-}
-.zoom-icon {
-	position: absolute;
-	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
-	background: rgba(64, 72, 109, 0.61);
-	display: block;
-	left: 0;
-	top: -152px;
-	width: 290px;
-	height: 219px;
-	background: url(../images/zoom.png) center center no-repeat;
-	cursor: pointer;
-	transition: all .2s ease-in-out;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-}
-.images_1_of_4 .zoom-icon {
-	top: -50px;
-	width:100%;
-	height:200px;	
-}
-.images_1_of_4 a:hover .zoom-icon {
-	top: 0;
-	opacity: 1;
-	filter: alpha(opacity=99); /* internet explorer */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
-}
-.grid_1_of_4 h4 {
-	text-transform: uppercase;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-	cursor: pointer;
-	padding: 13px 0px 2px 0px;
-	color: #333;
-	font-family: 'Roboto', sans-serif;
-	font-size:1em;
-	margin-bottom: 3%;
-}
-.grid_1_of_4 h4:hover {
-	color:#FAA685;
-}
-.grid_1_of_4 p {
-	font-size:0.89em;
-	color: #555;
-	line-height: 1.6em;
-	font-family: 'Droid Sans', sans-serif;
-}
-.link {
+                      .link {
 	background: url(../images/list-arrow.gif) no-repeat 100% 8px;
 	display: inline-block;
 	line-height: 19px;
@@ -2308,6 +2221,8 @@ p.product_descr {
 		border-left:none;
 	}
 }
+
+
 
 
 

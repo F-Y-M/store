@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block javascript %}
+<script src="{% static 'js/sneakers.js' %}"></script>
+<script src="{% static 'js/shopping.js' %}"></script>
+{% endblock javascript %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/sneakers/style.css' %}">
+
+{% endblock css %}
+{% block content %}{% endblock content %}
+{%block main%}
+<div class="container">
+    <div class="grid_1_of_4 images_1_of_4">
+        <div class="card">
+            <div class="sneaker">
+                <div class="circle"></div>
+                <img src="{% static 'images/adidas1.png' %}" alt="adidas">
+            </div>
+            <div class="info">
+                <h1 class="title">Adidas ZX</h1>
+                <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                <div class="sizes">
+                    <button>39</button>
+                    <button>40</button>
+                    <button class="active">42</button>
+                    <button>44</button>
+                </div>
+                <div class="purchase">
+                    <button>purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid_1_of_4 images_1_of_4">
+        <div class="card">
+            <div class="sneaker">
+                <div class="circle"></div>
+                <img src="{% static 'images/adidas1.png' %}" alt="adidas">
+            </div>
+            <div class="info">
+                <h1 class="title">Adidas ZX</h1>
+                <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                <div class="sizes">
+                    <button>39</button>
+                    <button>40</button>
+                    <button class="active">42</button>
+                    <button>44</button>
+                </div>
+                <div class="purchase">
+                    <button>purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+{% endblock main %}

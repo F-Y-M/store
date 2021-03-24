@@ -1,0 +1,379 @@
+
+
+body{
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap{
+    width: 80%;
+    margin:0 auto;
+	-moz-transition:all .2s linear;
+	-webkit-transition:all .2s linear; 
+	-o-transition:all .2s linear; 
+	-ms-transition:all .2s linear;
+}
+
+.header{
+	background: url(../../images/bg.jpg)no-repeat;
+    width: 100%;
+}
+
+.product-header{
+	background: url(../../images/product-bg.png)no-repeat;
+	padding:10px 0;
+}
+
+/*--menu--*/
+.cssmenu > ul > li {
+	display: inline-block;
+	position: relative;
+}
+
+.cssmenu > ul > li.active a, .cssmenu > ul > li a:hover {
+	color:#5F636D;
+}
+
+.cssmenu > ul > li > a {
+    color: #FFF;
+	display: block;
+	margin: 10px 10px;
+	letter-spacing: 1px;
+	font-size: 0.89em;
+	font-family: 'Droid Sans', sans-serif;
+    text-decoration: none;
+}
+
+.header-right{
+	float:right;
+	padding-top:18px;
+}
+
+.header-left{
+	float:left;
+}
+
+.header-right p {
+	line-height: 2.8em;
+	font-size: 16px;
+	color:#51565f;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.header-right img {
+	vertical-align:middle;
+}
+
+#loginContainer {
+    position:relative;
+    float:left;
+    padding-top:15px;
+}
+
+#loginContainer span{
+	color:#5f636d;
+	font-size:0.89em;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+/* Login Button */
+#loginButton { 
+    display:inline-block;  
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+}
+
+/* Login Box */
+#loginBox {
+    position:absolute;
+    top:75px;
+    right:-5px;
+    display:none;
+    z-index:29;
+}
+
+#loginForm span{
+	display:block;
+	font-size:0.89em;
+	color:#FFF;
+	padding-bottom:5px;
+	font-family: 'Droid Sans', sans-serif;
+}
+#loginForm input[type="text"]{
+	padding:8px;
+	display:block;
+	width:94%;
+	background:#fcfcfc;
+	border: none;
+	outline:none;
+	color:#464646;
+	font-size:0.8125em;
+	font-family:Arial, Helvetica, sans-serif;
+    -webkit-appearance:none;
+}
+#loginForm input[type="submit"]{
+	padding:8px 15px;
+	color:#FFF;
+	cursor:pointer;
+	background:#F58972 url(../images/large-button-overlay.png);
+	border:none;
+	outline:none;
+	font-family: 'Droid Sans', sans-serif;
+}
+#loginForm input[type="submit"]:hover{
+	background-color:#333;
+}
+/* Login Form */
+#loginForm {
+   width: 250px;
+	background:#707785;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	padding: 20px;
+}
+#loginForm:after {
+	content: '';
+	position: absolute;
+	right: 40px;
+	top: -6px;
+	border-left: 6px solid rgba(0, 0, 0, 0);
+	border-right: 6px solid rgba(0, 0, 0, 0);
+	border-bottom: 6px solid #707785;
+}
+/*--content--*/
+/*  GRID OF Content and sidebar   ============================================================================= */
+.cont{
+	display: block;
+	float:left;
+}
+
+.container{
+    width: 100%;
+	height: 100%;
+	padding-left: 20%;
+    display: flex;
+	flex-flow: row wrap;
+    justify-content: space-arround;
+    align-items: flex-start;
+    transition: all 0.75s ease;
+}
+
+.card{
+    transform-style: preserve-3d ;
+    min-height: 12px;
+    width: 10rem;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img{
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}   
+
+.circle{
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(
+        to right,
+        rgba( 245, 70, 60,0.75),
+        rgba(8, 83, 156, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1{
+font-size: 1rem;
+transition: all 0.75s ease-out;
+}
+
+.info h3{
+    font-size: 1rem;
+    padding: 0.3rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button{
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button.active{
+    background: #585858;
+    color: white;
+}
+
+.purchase{
+    margin: 1rem 0 1rem 0;
+	padding: 0 0 1rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button{
+    width: 100%;
+    padding: 1rem;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.footer{
+	background: url(../../images/f-bg1.png)repeat-x;
+    width: 101%;
+}
+
+.footer_icon {
+	list-style: none;
+}
+
+.footer_icon li{
+	display:inline-block;
+}
+
+.footer_icon li a img:hover{
+	opacity:0.9;
+}
+
+.span_1_of_footer {
+	width: 49.2%;
+}
+
+.span_1_of_footer1 {
+	width: 48.2%;
+}
+
+.col_1_of_footer {
+	display: block;
+	float: left;
+}
+
+.span_1_of_footer p {
+	font-size: 0.89em;
+	color:#fff;
+	line-height: 1.5em;
+	margin-bottom:20px;
+	padding-right: 20px;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.sidebar-nav h4, .sidebar-nav1 h4{
+	font-size:1.1em;
+	color:#fff;
+	text-transform:uppercase;
+	margin-bottom:15px;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.sidebar-nav{
+	padding-top: 29%;
+	text-align: center;
+}
+
+.sidebar-nav1{
+	padding-top: 29%;
+	text-align: center;
+}
+
+.sidebar-nav li, .sidebar-nav1 li {
+	margin-bottom:10px;
+	font-family: 'Droid Sans', sans-serif;
+    list-style:none
+}
+
+.sidebar-nav li a, .sidebar-nav1 li a{
+	font-size:0.89em;
+	color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:hover, .sidebar-nav1 li a:hover {
+	color:#6E7279;
+}
+
+.footer-right{
+	border-left:2px ridge #535050;
+	height:152px;
+}
+
+.footer-middle-right{
+	border-left:2px ridge #535050;
+}
+
+.footer-logo{
+	margin-bottom: 10px;
+}
+
+.copy{
+	text-align:center;
+	padding-bottom: 2%;
+}
+
+.copy p{
+	color:#fff;
+	font-size:0.89em;
+	line-height:1.5em;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.copy p a{
+	color:#F58972;
+	font-size:0.89em;
+}
+
+.copy p a:hover{
+	color:#fff;
+}
+
+
+/*--products--*/
+/*  GRID OF FOUR   ============================================================================= */
+.grid_1_of_4 {
+	margin: 2% 0 2% 3.6%;
+}
+.card:hover img{
+	background: blue;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+
+}
+.images_1_of_4 img {
+	max-width: 100%;
+	display: block;
+}
+

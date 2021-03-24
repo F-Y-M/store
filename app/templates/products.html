@@ -1,30 +1,36 @@
 {% extends 'index.html' %}
 {% load static %}
+{% block javascript %}
+<script src="{% static 'sneakers.js' %}"></script>
+<script src="{% static 'shopping.js' %}"></script>
+{% endblock javascript %}
+{% block content %}{% endblock content %}
+{%block main%}
 	</div>
 </div>
 <div class="product-main">
 	<div class="wrap">
 		 <div class="products-top">
-			<div class="grid_1_of_4 images_1_of_4">
-				<a href="{% url 'single.html' %}"><img src="{% static 'images/pic4.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+			<div class="grid_1_of_4 images_1_of_4" id="8">
+				<a href="{% url 'single' %}"><img src="{% static 'images/pic4.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 				<h4>Aenean nonummy hendrerit</h4>
 				<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 				<a href="#" class="link">Read More</a>
 			</div>
-			<div class="grid_1_of_4 images_1_of_4">
-				<a href="single.html"><img src="images/pic5.jpg" alt=""><span class="zoom-icon"></span> </a>
+			<div class="grid_1_of_4 images_1_of_4" id="1">
+				<a href="{% url 'single' %}"><img src="{% static 'images/pic5.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 				<h4>Aenean nonummy hendrerit</h4>
 				<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 				<a href="#" class="link">Read More</a>
 			</div>
-			<div class="grid_1_of_4 images_1_of_4">
-				<a href="single.html"><img src="images/pic6.jpg" alt=""><span class="zoom-icon"></span> </a>
+			<div class="grid_1_of_4 images_1_of_4" id="2">
+				<a href="{% url 'single' %}"><img src="{% static 'images/pic6.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 				<h4>Aenean nonummy hendrerit</h4>
 				<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 				<a href="#" class="link">Read More</a>
 			</div>
-			<div class="grid_1_of_4 images_1_of_4">
-				<a href="single.html"><img src="images/pic7.jpg" alt=""><span class="zoom-icon"></span> </a>
+			<div class="grid_1_of_4 images_1_of_4" id="3">
+				<a href="{% url 'single' %}"><img src="{% static 'images/pic7.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 				<h4>Aenean nonummy hendrerit</h4>
 				<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 				<a href="#" class="link">Read More</a>
@@ -32,26 +38,26 @@
 			<div class="clear"></div> 
 	   </div>
 	   <div class="products-top">
-		   <div class="grid_1_of_4 images_1_of_4">
-			  <a href="single.html"><img src="images/pic8.jpg" alt=""><span class="zoom-icon"></span> </a>
+		   <div class="grid_1_of_4 images_1_of_4" id="4">
+			  <a href="{% url 'single' %}"><img src="{% static 'images/pic8.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 			  <h4>Aenean nonummy hendrerit</h4>
 			  <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 			  <a href="#" class="link">Read More</a>
 		   </div>
-		   <div class="grid_1_of_4 images_1_of_4">
-			  <a href="single.html"><img src="images/pic9.jpg" alt=""><span class="zoom-icon"></span> </a>
+		   <div class="grid_1_of_4 images_1_of_4" id="5">
+			  <a href="{% url 'single' %}"><img src="{% static 'images/pic9.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 			  <h4>Aenean nonummy hendrerit</h4>
 			  <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 			  <a href="#" class="link">Read More</a>
 		   </div>
-		   <div class="grid_1_of_4 images_1_of_4">
-			  <a href="single.html"><img src="images/pic10.jpg" alt=""><span class="zoom-icon"></span> </a>
+		   <div class="grid_1_of_4 images_1_of_4" id="6">
+			  <a href="{% url 'single' %}"><img src="{% static 'images/pic10.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 			  <h4>Aenean nonummy hendrerit</h4>
 			  <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 			  <a href="#" class="link">Read More</a>
 		  </div>
-		  <div class="grid_1_of_4 images_1_of_4">
-			 <a href="single.html"><img src="images/pic11.jpg" alt=""><span class="zoom-icon"></span> </a>
+		  <div class="grid_1_of_4 images_1_of_4" id="7">
+			 <a href="{% url 'single' %}"><img src="{% static 'images/pic11.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
 			 <h4>Aenean nonummy hendrerit</h4>
 			 <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta hendrerit mauris..</p>
 			 <a href="#" class="link">Read More</a>
@@ -60,4 +66,4 @@
 	</div>
    </div>
   </div>
-            
+{% endblock main %}

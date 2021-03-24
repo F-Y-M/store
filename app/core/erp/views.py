@@ -11,12 +11,17 @@ def indexView(request):
 def productView(request):
     return render(request, 'products.html')
 
+def singleView(request):
+    return render(request, 'single.html')
+
 def contactView(request):
     return render(request, 'contact.html')
 
 def usView(request):
     return render(request, 'us.html')
 
+def dosView(request):
+    return render(request, 'dos.html')
 
-class dataPost(TemplateView):
-    template_name = 'data.html'
+def testView(request):
+    return render(request, 'test.html')
